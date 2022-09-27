@@ -9,7 +9,7 @@ target 'AwsFreertosExample' do
   use_react_native!(:path => config["reactNativePath"])
 
   use_frameworks! :linkage => :static
-  pod 'AmazonFreeRTOS'
+  pod 'AmazonFreeRTOS', :git => 'https://github.com/dazaar/amazon-freertos-ble-ios-sdk'
   pod 'AWSAuthUI'
   pod 'AWSMobileClient'
   pod 'AWSUserPoolsSignIn'
